@@ -1,0 +1,19 @@
+# Data
+data/
+*.csv
+
+# Environments
+.env
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Notebooks
+*.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
