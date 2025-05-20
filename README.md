@@ -1,83 +1,56 @@
-# Solar Data Discovery Challenge
+Solar Data Discovery - Week 1 Challenge
+This repository contains the implementation of the Solar Data Discovery challenge for MoonLight Energy Solutions. It includes data profiling, cleaning, exploratory data analysis (EDA), cross-country comparison, and an optional Streamlit dashboard for solar radiation data from Benin, Sierra Leone, and Togo.
+Repository Structure
 
-This repository contains analysis of solar farm data from Benin, Sierra Leone, and Togo for MoonLight Energy Solutions. The project aims to identify high-potential regions for solar installation through data analysis and visualization.
+.github/workflows/ci.yml: GitHub Actions workflow for CI/CD.
+src/: Python scripts for data cleaning, EDA, and comparison.
+notebooks/: Jupyter notebooks for EDA and cross-country comparison.
+app/: Streamlit dashboard application.
+tests/: Unit tests for data cleaning functions.
+data/: Contains datasets (not committed, ignored via .gitignore).
 
-## Project Structure
+Setup Instructions
 
-```
-├── .vscode/
-│   └── settings.json
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-├── src/
-│   └── __init__.py
-├── notebooks/
-│   ├── __init__.py
-│   ├── benin_eda.ipynb
-│   ├── sierra_leone_eda.ipynb
-│   ├── togo_eda.ipynb
-│   └── compare_countries.ipynb
-├── tests/
-│   └── __init__.py
-├── scripts/
-│   ├── __init__.py
-│   └── README.md
-├── app/
-│   ├── __init__.py
-│   ├── main.py
-│   └── utils.py
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
-
-## Environment Setup
-
-### Prerequisites
-- Python 3.8+
-- Git
-
-### Setting up the development environment
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Abuabdellahh/solar-challenge-week1-final 
+Clone the Repository:git clone https://github.com/your-username/solar-challenge-week1.git
 cd solar-challenge-week1
-```
 
-2. Create and activate a virtual environment:
-```bash
-# For Windows
-python -m venv venv
-venv\Scripts\activate
 
-# For macOS/Linux
-python -m venv venv
-source venv/bin/activate
-```
+Set Up Virtual Environment:python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
 
-## Data Analysis
+Install Dependencies:pip install -r requirements.txt
 
-The project includes:
-- Data profiling and cleaning for each country
-- Exploratory Data Analysis (EDA) to identify patterns and insights
-- Cross-country comparison to identify high-potential regions
-- Interactive dashboard for visualization (optional)
 
-## Running the Streamlit Dashboard
+Place Datasets:
+Place benin.csv, sierraleone.csv, and togo.csv in the data/ folder.
 
-To run the Streamlit dashboard locally:
 
-```bash
-streamlit run app/main.py
-```
+Run Notebooks:
+Open notebooks/ in Jupyter and run <country>_eda.ipynb for each country and compare_countries.ipynb for cross-country analysis.
 
-## Contributors
 
-- Your Name
+Run Streamlit Dashboard:streamlit run app/main.py
+
+
+Deploy to Streamlit Community Cloud (see app/ instructions).
+
+
+
+Contributions
+
+Git Setup: Initialized repository with branches (setup-task, eda-<country>, compare-countries, dashboard-dev).
+EDA: Performed data profiling, cleaning, and visualization for each country.
+Comparison: Conducted cross-country analysis with boxplots and summary statistics.
+Dashboard: Built an interactive Streamlit app to visualize insights.
+
+Usage
+
+Run EDA notebooks for individual country analysis.
+Run compare_countries.ipynb for cross-country comparisons.
+Access the Streamlit dashboard for interactive visualizations.
+
+Deployment
+
+The Streamlit app is deployed at [Streamlit Community Cloud URL] (replace with actual URL after deployment).
+
